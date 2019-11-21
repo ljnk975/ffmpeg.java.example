@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>topica.linhnv5</groupId>
+	<artifactId>test.ffmpeg</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>test.ffmpeg</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<javacpp.ffmpeg.version>4.1-1.4.4</javacpp.ffmpeg.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/ffmpeg -->
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>ffmpeg</artifactId>
+			<version>${javacpp.ffmpeg.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/ffmpeg-platform -->
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>ffmpeg-platform</artifactId>
+			<version>${javacpp.ffmpeg.version}</version>
+		</dependency>
+	</dependencies>
+</project>
